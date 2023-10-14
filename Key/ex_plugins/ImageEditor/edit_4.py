@@ -8,7 +8,7 @@ import numpy as np
 import requests
 from PIL import Image, ImageDraw, ImageOps
 
-from Hikari.confing import get_str_key
+from Key.confing import get_str_key
 
 RemoveBG_API = get_str_key("REM_BG_API_KEY", required=False)
 
