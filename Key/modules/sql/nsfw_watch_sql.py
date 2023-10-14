@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from Hikari.modules.sql import BASE, SESSION
+from Key.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
