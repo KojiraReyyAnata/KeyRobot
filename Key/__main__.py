@@ -759,7 +759,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 5063062493:
             update.effective_message.reply_text(
-                f"I'm free for everyone ❤️ If you wanna make me smile, just join[My Channel]({DONATION_LINK})",
+                f"I'm free for everyone ❤️ If you wanna make me smile, just join[@GeninStore]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
