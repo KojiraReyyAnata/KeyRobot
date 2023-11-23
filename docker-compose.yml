@@ -1,13 +1,15 @@
 version: '3.9'
 services:
     music:
-        build:
+        build: 
             context: .
-            dockerfile: music/Dockerfile
+            dockerfile: music/Dockerfile 
+        restart: always
 
     manage:
         build:
             context: .
             dockerfile: manage/Dockerfile
+        restart: always
         env_file:
-            - manage/manage.env
+            - manage.env
