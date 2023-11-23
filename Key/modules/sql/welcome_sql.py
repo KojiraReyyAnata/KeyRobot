@@ -115,23 +115,23 @@ DEFAULT_WELCOME_MESSAGES = [
     "Aku... aku... Shirohige!...tunggu..salah anime.",  # one Piece
     "Hey {first}...pernahkah kamu mendengar kata-kata ini??",  # BNHA
     "Tidak bisakah seorang pria tidur sebentar di sekitar sini??",  # Kamina Falls – Gurren Lagann
-    "Saatnya seseorang menempatkanmu di tempatmu, {first}.",  # Hellsing
+    "Jangan Ketinggalan Promo Join ke @Geninstore, {first}.",  # Hellsing
     "Unit-01 diaktifkan kembali..",  # Neon Genesis: Evangelion
     "Bersiaplah untuk masalah ... Dan buatlah menjadi dua kali lipat",  # Pokemon
     "Hey {first}, apakah Anda Menantang Saya??",  # Shaggy
     "Oh? Anda Mendekati Saya?",  # jojo
-    "hei lihatlah owner saya @kenapatagkazu?",  # jojo jap ver
-    "Aku tidak bisa mengalahkanmu tanpa mendekat",  # jojo
-    "Hoho! Lalu datanglah sedekat yang kamu mau.", #jojo
+    "Beli Bot PC @Galau912?",  # jojo jap ver
+    "Order VCS Langsung Ke @Galau912",  # jojo
+    "Minimal Addbl Anjing upss bersyanda😁.", #jojo
     "Hoho! Dewa juubun chikazukanai youi", #jojo jap ver
     "Tebak siapa yang selamat dari waktunya di Neraka, {first}.",  # jojo
-    "Berapa banyak roti yang kamu makan seumur hidupmu?", #jojo
+    "Kenapa Bingung? Link Gacor Di Sematan Ya Anjenk {first}", #jojo
     "Apa katamu? Tergantung jawabanmu, aku mungkin harus menghajarmu!", #jojo
     "Oh? Kamu mendekatiku? selamat datang?",  # jojo
     "Apa yang kamu cari digroup ini? btw Selamat datang",  # jojo
     "{first} baru saja masuk ke grup!",
-    "hell yeeahhh, {first} sudah masuk group ini.",
-    "Sugoi, Dekai. {first} bergabung!",
+    "hahaha awas anak haram, {first} sudah masuk group ini.",
+    "Konnichiwa. {first} bergabung!",
     "{first}, apakah kamu tahu dewa kematian menyukai apel?",  # Death Note owo
     "Saya akan mengambil keripik kentang .... dan memakannya",  # Death Note owo
     "lariiiii {first} sudah datang!",  # Tokyo Ghoul
