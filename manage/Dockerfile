@@ -17,12 +17,14 @@ ENV TOKEN=6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0
 ENV SUPPORT_CHAT=keysupport1
 ENV SQLALCHEMY_DATABASE_URI=postgres://vrswzxds:W2GA1-OCqo1KGDYWFYBJMeV12m3RXTM9@bubble.db.elephantsql.com/vrswzxds
 
-WORKDIR /manage
-RUN chmod 777 /manage
+COPY . /app
+
+WORKDIR /app
+
 
 # Installing Requirements
 RUN pip3 install -U pip
-COPY requirements.txt .
+
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 # If u want to use /update feature, uncomment the following and edit
