@@ -11,7 +11,7 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 #RUN git config --global user.name "git_username"
 
 # Copying Source Code
-COPY . .
+COPY /manage .
 
 # Set appropriate permissions (adjust as needed)
 RUN chmod 755 /manage
