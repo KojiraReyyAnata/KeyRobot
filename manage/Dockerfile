@@ -1,5 +1,6 @@
 FROM python:3.10
 
+# Set environment variables
 ENV API_ID=17250424 
 ENV API_HASH=753bc98074d420ef57ddf7eb1513162b
 ENV EVENT_LOGS=-1001961499248
@@ -17,12 +18,15 @@ ENV TOKEN=6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0
 ENV SUPPORT_CHAT=keysupport1
 ENV SQLALCHEMY_DATABASE_URI=postgres://vrswzxds:W2GA1-OCqo1KGDYWFYBJMeV12m3RXTM9@bubble.db.elephantsql.com/vrswzxds
 
+# Copy the current directory contents into the container at /app
 COPY . /app
 
+# Set the working directory to /app
 WORKDIR /app
 
-RUN pip3 install -U pip
+# Upgrade pip and install dependencies
+RUN pip3 install -U pip \
+    && pip3 install --no-cache-dir -U -r requirements.txt
 
-RUN pip3 install --no-cache-dir -U -r requirements.txt
-
-CMD bash start
+# Command to run on container start
+CMD ["bash", "start"]
