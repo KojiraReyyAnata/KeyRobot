@@ -1,10 +1,8 @@
 FROM williambutcherbot/python:latest
 
-WORKDIR /KeyRobot
-RUN chmod 777 /KeyRobot
+WORKDIR /manage
 
-# Installing Requirements
-RUN pip3 install -U pip
+# Copying Requirements and Installing Dependencies
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
@@ -12,8 +10,11 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 #RUN git config --global user.email "your_email"
 #RUN git config --global user.name "git_username"
 
-# Copying All Source
+# Copying Source Code
 COPY . .
+
+# Set appropriate permissions (adjust as needed)
+RUN chmod 755 /manage
 
 # Starting Bot
 CMD ["python3", "-m", "Key"]
