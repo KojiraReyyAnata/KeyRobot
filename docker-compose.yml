@@ -1,13 +1,16 @@
 version: '3'
-services:
-    music:
-        build: 
-            context: .
-            dockerfile: music/Dockerfile 
-        # restart: always
 
-    manage:
-        build:
-            context: .
-            dockerfile: manage/Dockerfile
-        # restart: always
+services:
+  music:
+    build: 
+      context: .
+      dockerfile: music/Dockerfile 
+    restart: always
+    # Tambahkan konfigurasi tambahan jika diperlukan
+
+  manage:
+    build:
+      context: .
+      dockerfile: manage/Dockerfile
+    restart: always
+    # Tambahkan konfigurasi tambahan jika diperlukan
