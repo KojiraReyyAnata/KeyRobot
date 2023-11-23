@@ -4,12 +4,9 @@ services:
         build: 
             context: .
             dockerfile: music/Dockerfile 
-        restart: always
 
     manage:
         build:
             context: .
             dockerfile: manage/Dockerfile
-        restart: always
-        env_file:
-            - manage.env
+
