@@ -3,15 +3,11 @@ services:
     music:
         build: 
             context: .
-            dockerfile: music/Dockerfile
-        mem_limit: 2000m
-        cpus: 1.0
-        # restart: always
+            dockerfile: Music/Dockerfile 
+        restart: always
 
     manage:
         build:
             context: .
-            dockerfile: manage/Dockerfile
-        mem_limit: 2000m
-        cpus: 1.0
-        # restart: always
+            dockerfile: Manage/Dockerfile
+        restart: always
