@@ -21,8 +21,8 @@ class Config(object):
    TOKEN = os.getenv("TOKEN", "6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0")  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
    OWNER_ID = os.getenv("OWNER_ID", "935304382")  # If you dont know, run the bot and do /id in your private chat with it, also an integer
    OWNER_USERNAME = os.getenv("OWNER_USERNAME", "Galau912")
-   SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "GokilSupport")  # Your own group for support, do not add the @
-   JOIN_LOGGER = os.getenv("JOIN_LOGGER", "-1001961499248")  # Prints any new group the bot is added to, prints just the name and ID.
+   SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "Keysupport1")  # Your own group for support, do not add the @
+   JOIN_LOGGER = os.getenv("JOIN_LOGGER", "-1001749935010")  # Prints any new group the bot is added to, prints just the name and ID.
    EVENT_LOGS = os.getenv("EVENT_LOGS", "-1001961499248")  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
    ERROR_LOGS = os.getenv("ERROR_LOGS", "-1001961499248")  # For capture error logs
     # RECOMMENDED
