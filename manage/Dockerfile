@@ -3,7 +3,7 @@ FROM williambutcherbot/python:latest
 WORKDIR /manage
 
 # Copying Requirements and Installing Dependencies
-COPY . .
+COPY . /manage
 RUN pip3 install -U pip \
     && pip3 install --no-cache-dir -U -r requirements.txt
 
