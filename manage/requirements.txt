@@ -41,7 +41,7 @@ alphabet_detector
 cachetools
 ujson
 pretty_errors
-pygithub
+# pygithub
 TgCrypto
 pyrogram==1.4.16
 PyDictionary
