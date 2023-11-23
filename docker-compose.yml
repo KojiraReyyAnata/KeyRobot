@@ -6,7 +6,7 @@ services:
             dockerfile: music/Dockerfile
         mem_limit: 2000m
         cpus: 1.0
-        restart: always
+        # restart: always
 
     manage:
         build:
@@ -14,4 +14,4 @@ services:
             dockerfile: manage/Dockerfile
         mem_limit: 2000m
         cpus: 1.0
-        restart: always
+        # restart: always
