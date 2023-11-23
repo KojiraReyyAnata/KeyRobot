@@ -1,1 +1,1 @@
-python3 -m NayaMusic
+git pull && python3 -m NayaMusic

