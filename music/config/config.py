@@ -26,7 +26,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-"Mongodb"-URI-04-06
 MONGO_DB_URI = os.getenv("MONGO_DB_URI", "mongodb+srv://keyxrobot:gualupabanget@keyxrobot.tzyl5qp.mongodb.net/?retryWrites=true&w=majority")
 
-JOIN = os.getenv("JOIN", "SquirtInYourPussy")
+JOIN = os.getenv("JOIN", "Geninstore")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
