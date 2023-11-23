@@ -17,8 +17,8 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(os.getenv("API_ID", "17250424"))
-API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
+API_ID = int(os.getenv("API_ID", "1634450"))
+API_HASH = os.getenv("API_HASH", "1a42e816cae8d86e71a4c466bba19b8c")
 
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = os.getenv("BOT_TOKEN", "6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0")
@@ -42,10 +42,10 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", "-1001961499248"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = os.getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = os.getenv("MUSIC_BOT_NAME", "Key X Robot")
 
 # Your User ID.
-OWNER_ID = int(os.getenv("OWNER_ID"))  # Input type must be interger
+OWNER_ID = int(os.getenv("OWNER_ID", "935304382"))  # Input type must be interger
 
 # JANGAN HAPUS YA KONTOL
 
@@ -69,10 +69,10 @@ GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = os.getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", "https://t.me/SquirtInYourPussy"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = os.getenv(
-    "SUPPORT_GROUP", None
+    "SUPPORT_GROUP", "https://t.me/KeySupport1"
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
