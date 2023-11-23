@@ -10,4 +10,4 @@ COPY . .
 
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-CMD bash start
+CMD python3 -m Key
