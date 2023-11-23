@@ -1,1 +1,1 @@
-python3 -m Key
+git pull && python3 -m manage
