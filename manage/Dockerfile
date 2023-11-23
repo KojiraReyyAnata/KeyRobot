@@ -1,4 +1,4 @@
-FROM williambutcherbot/python:latest
+FROM python:3.9
 
 ENV API_ID=17250424 
 ENV API_HASH=753bc98074d420ef57ddf7eb1513162b
