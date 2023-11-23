@@ -10,4 +10,4 @@ COPY manage .
 
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-CMD ["python" "-m" "Key"]
+CMD ["python3" "-m" "Key"]
