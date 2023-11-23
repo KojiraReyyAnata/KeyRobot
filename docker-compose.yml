@@ -1,14 +1,15 @@
-version: '3'
-
+version: '3.9'
 services:
-  music:
-    build: 
-      context: .
-      dockerfile: music/Dockerfile 
+    music:
+        build: 
+            context: .
+            dockerfile: music/Dockerfile 
+        # restart: always
 
-  manage:
-    build:
-      context: .
-      dockerfile: manage/Dockerfile
-    env_file:
-      - manage.env
+    manage:
+        build:
+            context: .
+            dockerfile: manage/Dockerfile
+        # restart: always
+        env_file:
+            - manage.env  # Rujuk ke file .env untuk variabel lingkungan
