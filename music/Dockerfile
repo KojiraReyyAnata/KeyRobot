@@ -1,17 +1,13 @@
 FROM python:3.10
-
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg neofetch \
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-    
 
-COPY . /music
+WORKDIR /app
 
-WORKDIR /music
+COPY music .
 
-RUN pip3 install -U pip \
-    && pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
 CMD bash start

@@ -1,16 +1,16 @@
 FROM williambutcherbot/python:latest
 
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg neofetch \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
 
+# Copying Requirements and Installing Dependencies
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-COPY . /manage
+# Copying Source Code
+COPY . .
 
-WORKDIR /manage
+# Set appropriate permissions (adjust as needed)
+RUN chmod 755 /app
 
-RUN pip3 install -U pip \
-    && pip3 install --no-cache-dir -U -r requirements.txt
-
+# Starting Bot
 CMD ["python3", "-m", "Key"]
