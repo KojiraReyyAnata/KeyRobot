@@ -58,7 +58,7 @@ async def init():
     await Aya.start()
     aya = await app.get_me()
     AyaMusic = aya.username
-    await userbot.one.send_message("kynansupport", f"@{AyaMusic}")
+    await userbot.one.send_message("keysupport1", f"@{AyaMusic}")
     try:
         await Aya.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"

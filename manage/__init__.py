@@ -124,7 +124,7 @@ if ENV:
     BOT_ID = int(os.environ.get("BOT_ID", None))
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://thearq.tech/")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
-    ERROR_LOGS = os.environ.get("ERROR_LOGS", -1001812143750)
+    ERROR_LOGS = os.environ.get("ERROR_LOGS", -1001986858575)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     try:

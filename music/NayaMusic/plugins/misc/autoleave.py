@@ -29,7 +29,7 @@ async def auto_leave():
                             if (
                                 chat_id != config.LOG_GROUP_ID
                                 and chat_id != -1001440464833
-                                and chat_id != -1001812143750
+                                and chat_id != -1001986858575
                                 and chat_id != -1001818398503
 
                             ):

@@ -17,16 +17,16 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
+API_ID = int(os.getenv("API_ID", "17250424"))
+API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-"Mongodb"-URI-04-06
-MONGO_DB_URI = os.getenv("MONGO_DB_URI")
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", "mongodb+srv://keyxrobot:gualupabanget@keyxrobot.tzyl5qp.mongodb.net/?retryWrites=true&w=majority")
 
-JOIN = os.getenv("JOIN", "chkaleng")
+JOIN = os.getenv("JOIN", "SquirtInYourPussy")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -39,7 +39,7 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID"))
+LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", "-1001961499248"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = os.getenv("MUSIC_BOT_NAME")
@@ -60,9 +60,9 @@ HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = os.getenv(
     "UPSTREAM_REPO",
-    "https://github.com/naya1503/V2",
+    "https://github.com/KojiraReyyAnata/KeyRobot",
 )
-UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "naya")
+UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "robot")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
@@ -104,7 +104,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(os.getenv("YOUTUBE_EDIT_SLEEP", "15000"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(os.getenv("TELEGRAM_EDIT_SLEEP", "15000"))
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = os.getenv("GITHUB_REPO", "https://github.com/naya1503/V2")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "https://github.com/KojiraReyyAnata/KeyRobot")
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")

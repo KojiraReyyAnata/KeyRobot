@@ -88,8 +88,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("abtnaaa")
-                await self.one.join_chat("kynansupport")
+                await self.one.join_chat("SquirtInYourPussy")
+                await self.one.join_chat("keysupport1")
                 await self.one.join_chat("kontenfilm")
             except:
                 pass
@@ -119,8 +119,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("abtnaaa")
-                await self.two.join_chat("kynansupport")
+                await self.two.join_chat("SquirtInYourPussy")
+                await self.two.join_chat("keysupport1")
                 await self.two.join_chat("kontenfilm")
             except:
                 pass
@@ -150,8 +150,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("abtnaaa")
-                await self.three.join_chat("kynansupport")
+                await self.three.join_chat("SquirtInYourPussy")
+                await self.three.join_chat("keysupport1")
                 await self.three.join_chat("kontenfilm")
             except:
                 pass
@@ -181,8 +181,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("abtnaaa")
-                await self.four.join_chat("kynansupport")
+                await self.four.join_chat("SquirtInYourPussy")
+                await self.four.join_chat("keysupport1")
                 await self.four.join_chat("kontenfilm")
             except:
                 pass
@@ -212,8 +212,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("abtnaaa")
-                await self.five.join_chat("kynansupport")
+                await self.five.join_chat("SquirtInYourPussy")
+                await self.five.join_chat("keysupport1")
                 await self.five.join_chat("kontenfilm")
             except:
                 pass
@@ -243,8 +243,8 @@ class Userbot(Client):
         if config.STRING6:
             await self.six.start()
             try:
-                await self.six.join_chat("abtnaaa")
-                await self.six.join_chat("kynansupport")
+                await self.six.join_chat("SquirtInYourPussy")
+                await self.six.join_chat("keysupport1")
                 await self.six.join_chat("kontenfilm")
             except:
                 pass
@@ -274,8 +274,8 @@ class Userbot(Client):
         if config.STRING7:
             await self.seven.start()
             try:
-                await self.seven.join_chat("abtnaaa")
-                await self.seven.join_chat("kynansupport")
+                await self.seven.join_chat("SquirtInYourPussy")
+                await self.seven.join_chat("keysupport1")
                 await self.seven.join_chat("kontenfilm")
             except:
                 pass
@@ -305,8 +305,8 @@ class Userbot(Client):
         if config.STRING8:
             await self.eight.start()
             try:
-                await self.eight.join_chat("abtnaaa")
-                await self.eight.join_chat("kynansupport")
+                await self.eight.join_chat("SquirtInYourPussy")
+                await self.eight.join_chat("keysupport1")
                 await self.eight.join_chat("kontenfilm")
             except:
                 pass
@@ -336,8 +336,8 @@ class Userbot(Client):
         if config.STRING9:
             await self.nine.start()
             try:
-                await self.nine.join_chat("abtnaaa")
-                await self.nine.join_chat("kynansupport")
+                await self.nine.join_chat("SquirtInYourPussy")
+                await self.nine.join_chat("keysupport1")
                 await self.nine.join_chat("kontenfilm")
             except:
                 pass
@@ -367,8 +367,8 @@ class Userbot(Client):
         if config.STRING10:
             await self.ten.start()
             try:
-                await self.ten.join_chat("abtnaaa")
-                await self.ten.join_chat("kynansupport")
+                await self.ten.join_chat("SquirtInYourPussy")
+                await self.ten.join_chat("keysupport1")
                 await self.ten.join_chat("kontenfilm")
             except:
                 pass
