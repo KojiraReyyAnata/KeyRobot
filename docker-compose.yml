@@ -12,4 +12,4 @@ services:
             dockerfile: manage/Dockerfile
         # restart: always
         env_file:
-            - manage.env  # Rujuk ke file .env untuk variabel lingkungan
+            - manage/manage.env  # Rujuk ke file .env untuk variabel lingkungan
