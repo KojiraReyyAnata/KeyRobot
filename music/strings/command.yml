@@ -1,0 +1,113 @@
+#
+# Copyright (C) 2021-2022 by Toni880@Github, < https://github.com/Toni880 >.
+#
+# This file is part of < https://github.com/TOni880/PrimeMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/Toni880/PrimeMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
+
+# Commands in Every Language
+
+# Bot Commands
+PING_COMMAND : ["ping"]
+START_COMMAND : ["start"]
+HELP_COMMAND : ["mhelp"]
+SETTINGS_COMMAND : ["msettings"]
+RELOAD_COMMAND : ["reload"]
+GSTATS_COMMAND : ["gstats"]
+STATS_COMMAND : ["system"]
+LANGUAGE_COMMAND : ["lang", "language"]
+
+# Play Commands
+PLAY_COMMAND : ["p", "play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAYMODE_COMMAND : ["playmode"]
+CHANNELPLAY_COMMAND : ["channelplay"]
+STREAM_COMMAND : ["stream", "cstream", "streamforce"]
+
+#Playlists Command
+PLAYLIST_COMMAND : ["playlist"]
+DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
+
+
+# Tools
+QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
+SONG_COMMAND : ["vsong", "vvideo"]
+LYRICS_COMMAND : ["lyrics"]
+
+
+# Admin Commands
+AUTH_COMMAND : ["auth"]
+UNAUTH_COMMAND : ["unauth"]
+AUTHUSERS_COMMAND : ["authusers"]
+PAUSE_COMMAND : ["ps", "pause", "cpause"]
+RESUME_COMMAND : ["rs", "resume", "cresume"]
+MUTE_COMMAND : ["emute", "cemute"]
+UNMUTE_COMMAND : ["unemut", "cunmut"]
+STOP_COMMAND : ["e", "end", "cstop", "cend"]
+SKIP_COMMAND : ["sk", "skip", "cskip"]
+SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
+LOOP_COMMAND : ["loop", "cloop"]
+SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
+RESTART_COMMAND : ["restart"]
+
+# Sudo Users Commaands
+
+# Sudo Command
+ADDSUDO_COMMAND : ["maddsudo"]
+DELSUDO_COMMAND : ["mdelsudo"]
+SUDOUSERS_COMMAND : ["msudolist"]
+
+#Broadcast 
+BROADCAST_COMMAND : ["broadcast"]
+
+#Blacklist chat
+BLACKLISTCHAT_COMMAND : ["blacklistchat"]
+WHITELISTCHAT_COMMAND : ["whitelistchat"]
+BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
+
+# Video Calls Command
+VIDEOLIMIT_COMMAND : ["set_video_limit"]
+VIDEOMODE_COMMAND : ["videomode"]
+
+#Mantenance
+MAINTENANCE_COMMAND : ["maintenance"]
+LOGGER_COMMAND : ["logger"]
+
+#Heroku
+GETLOG_COMMAND : ["get_log"]
+GETVAR_COMMAND : ["get_var"]
+DELVAR_COMMAND : ["del_var"]
+SETVAR_COMMAND : ["set_var"]
+USAGE_COMMAND : ["usage"]
+VARS_COMMAND : ["vars", "config"]
+
+
+#Basic Bot Commands
+UPDATE_COMMAND : ["update"]
+REBOOT_COMMAND : ["reboot"]
+AUTOEND_COMMAND : ["autoend"]
+UPGRADE_COMMAND : ["upgrade"]
+
+#Private Bot Mode
+AUTHORIZE_COMMAND : ["authorize"]
+UNAUTHORIZE_COMMAND : ["unauthorize"]
+AUTHORIZED_COMMAND : ["authorized"]
+
+#Block Users Command
+BLOCK_COMMAND : ["block"]
+UNBLOCK_COMMAND : ["unblock"]
+BLOCKED_COMMAND : ["blockedusers"]
+
+#sPEEDTEST
+SPEEDTEST_COMMAND : ["speedtest"]
+
+#Voice chat commands
+ACTIVEVC_COMMAND : ["vc"]
+ACTIVEVIDEO_COMMAND : ["vd"]
+
+#Gban Commands
+GBAN_COMMAND : ["mgban"]
+UNGBAN_COMMAND : ["ungban"]
+GBANNED_COMMAND : ["gbanlist"]
