@@ -6,7 +6,7 @@ RUN apt-get update -y \
 
 WORKDIR /app
 
-COPY music .
+COPY . .
 
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
