@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+    music:
+        build: 
+            context: .
+            dockerfile: music/Dockerfile
+        mem_limit: 2000m
+        cpus: 1.0
+        restart: always
+
+    manage:
+        build:
+            context: .
+            dockerfile: manage/Dockerfile
+        mem_limit: 2000m
+        cpus: 1.0
+        restart: always
