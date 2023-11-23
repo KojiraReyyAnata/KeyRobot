@@ -92,3 +92,4 @@ ShazamAPI
 html-telegraph-poster
 qrcode
 flask
+python-dotenv
