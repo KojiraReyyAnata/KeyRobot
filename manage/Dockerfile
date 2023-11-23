@@ -1,16 +1,14 @@
 FROM williambutcherbot/python:latest
 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# Copying Requirements and Installing Dependencies
-COPY requirements.txt /app
+COPY . /app
+
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-# Copying Source Code
-COPY . .
-
-# Set appropriate permissions (adjust as needed)
-RUN chmod 755 /app
-
-# Starting Bot
 CMD ["python3", "-m", "Key"]
