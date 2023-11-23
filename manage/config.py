@@ -16,17 +16,17 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-   API_ID = int(os.getenv("API_ID"))  # integer value, dont use ""
-   API_HASH = os.getenv("API_HASH")
-   TOKEN = os.getenv("TOKEN")  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-   OWNER_ID = os.getenv("OWNER_ID")  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-   OWNER_USERNAME = os.getenv("OWNER_USERNAME")
-   SUPPORT_CHAT = os.getenv("SUPPORT_CHAT")  # Your own group for support, do not add the @
-   JOIN_LOGGER = os.getenv("JOIN_LOGGER")  # Prints any new group the bot is added to, prints just the name and ID.
-   EVENT_LOGS = os.getenv("EVENT_LOGS")  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-   ERROR_LOGS = os.getenv("ERROR_LOGS")  # For capture error logs
+   API_ID = int(os.getenv("API_ID", "17250424"))  # integer value, dont use ""
+   API_HASH = os.getenv("API_HASH", "753bc98074d420ef57ddf7eb1513162b")
+   TOKEN = os.getenv("TOKEN", "6829313514:AAGAOdhcZyUT9msB8enlkhCEsiZExP_z-j0")  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+   OWNER_ID = os.getenv("OWNER_ID", "935304382")  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+   OWNER_USERNAME = os.getenv("OWNER_USERNAME", "Galau912")
+   SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "GokilSupport")  # Your own group for support, do not add the @
+   JOIN_LOGGER = os.getenv("JOIN_LOGGER", "-1001961499248")  # Prints any new group the bot is added to, prints just the name and ID.
+   EVENT_LOGS = os.getenv("EVENT_LOGS", "-1001961499248")  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+   ERROR_LOGS = os.getenv("ERROR_LOGS", "-1001961499248")  # For capture error logs
     # RECOMMENDED
-   SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI") # needed for any database modules
+   SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI", "postgres://vrswzxds:W2GA1-OCqo1KGDYWFYBJMeV12m3RXTM9@bubble.db.elephantsql.com/vrswzxds") # needed for any database modules
    LOAD = []
    NO_LOAD = ["rss", "cleaner", "connection", "math"]
    WEBHOOK = False
@@ -34,15 +34,15 @@ class Config(object):
    URL = None
    SPAMWATCH_API = os.getenv("SPAMWATCH_API", None)  # go to support.spamwat.ch to get key
    SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-   MONGO_DB_URI = os.getenv("MONGO_DB_URI")  # Required for any database modules
-   MONGO_DB = "Key"
+   MONGO_DB_URI = os.getenv("MONGO_DB_URI", "mongodb+srv://keyxrobot:gualupabanget@keyxrobot.tzyl5qp.mongodb.net/?retryWrites=true&w=majority")  # Required for any database modules
+   MONGO_DB = "keyxrobot"
    MONGO_PORT = "27017"
-   ARQ_API = os.getenv("ARQ_API")  # Get this from @ARQRobot
-   ARQ_API_KEY = os.getenv("ARQ_API_KEY")
+   ARQ_API = os.getenv("ARQ_API", "PPJZAN-CVFHRQ-QFVBOU-CNESNO-ARQ")  # Get this from @ARQRobot
+   ARQ_API_KEY = os.getenv("ARQ_API_KEY", "PPJZAN-CVFHRQ-QFVBOU-CNESNO-ARQ")
    ARQ_API_URL = "https://arq.hamker.in"
-   BOT_NAME = "Key Robot"
-   BOT_USERNAME = os.getenv("BOT_USERNAME")
-   BOT_ID = os.getenv("BOT_ID")
+   BOT_NAME = "Key x Robot"
+   BOT_USERNAME = os.getenv("BOT_USERNAME", "Key_musicbot")
+   BOT_ID = os.getenv("BOT_ID", "6829313514")
    OPENWEATHERMAP_ID = "22322"
    
 
@@ -82,9 +82,9 @@ class Config(object):
    BL_CHATS = []  # List of groups that you want blacklisted.
    SPAMMERS = None
    ALLOW_CHATS = None
-   MONGO_DB = "Key Robot"
+   MONGO_DB = "Key x Robot"
    TEMP_DOWNLOAD_DIRECTORY = "./"
-   STRING_SESSION = os.getenv("STRING_SESSION")
+   STRING_SESSION = os.getenv("STRING_SESSION", "BQC_AFHdtxAUk-eqpQDVUHbSuTv35ijELZ1SCMvKJGUj2Uiye8vcwhKrbl4-g6mzNsY9bX6PKg7SQXUs-o7SEt9oasiYNOqAZeULaYLSrcca9Q52t28vDxC4w6kkNoBBFYaelaCq8B18UgDX2Qh3baSIVUX7NZ-WWAwJqfZtcMirxe45B6mqnKz_Eu1DHKAbBgCJ0ygvCfZraFqqreKy0XXL4pGmBrCZz3VfrEGBBMIn8cWBZpgYR4CI6-rQ1N1_T0cFqYWDvKGFm3S6oxf9jYovWMe4dyS7rQlnMbmBMFgzQ2G5xlh0D6mOmNFvRteCuvIgNgrniGzip9lsbFgqZkvxAAAAAZcPDeoB")
 
 
 class Production(Config):
