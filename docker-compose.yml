@@ -3,11 +3,11 @@ services:
     music:
         build: 
             context: .
-            dockerfile: Music/Dockerfile 
+            dockerfile: music/Dockerfile 
         restart: always
 
     manage:
         build:
             context: .
-            dockerfile: Manage/Dockerfile
+            dockerfile: manage/Dockerfile
         restart: always
