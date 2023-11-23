@@ -8,19 +8,19 @@ answer.extend(
         InlineQueryResultArticle(
             title="Pause Stream",
             description=f"Pause the current playout on group call.",
-            thumb_url="https://telegra.ph/file/c0a1c789def7b93f13745.png",
+            thumb_url="https://telegra.ph/file/92b225928deaee7c856fd0.png",
             input_message_content=InputTextMessageContent("/pause"),
         ),
         InlineQueryResultArticle(
             title="Resume Stream",
             description=f"Resume the ongoing playout on group call.",
-            thumb_url="https://telegra.ph/file/02d1b7f967ca11404455a.png",
+            thumb_url="https://telegra.ph/file/92b225928deaee7c856fd0.png",
             input_message_content=InputTextMessageContent("/resume"),
         ),
         InlineQueryResultArticle(
             title="Mute Stream",
             description=f"Mute the ongoing playout on group call.",
-            thumb_url="https://telegra.ph/file/66516f2976cb6d87e20f9.png",
+            thumb_url="https://telegra.ph/file/92b225928deaee7c856fd0.png",
             input_message_content=InputTextMessageContent("/mute"),
         ),
         InlineQueryResultArticle(
