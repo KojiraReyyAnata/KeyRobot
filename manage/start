@@ -1,2 +1,1 @@
-git pull
-python3 -m manage
+git pull && python3 -m manage
