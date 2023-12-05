@@ -1,16 +1,19 @@
-FROM python:3.10
+FROM williambutcherbot/python:latest
 
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg neofetch \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-    
-WORKDIR /app
+WORKDIR /KeyRobot
+RUN chmod 777 /KeyRobot
 
+# Installing Requirements
+RUN pip3 install -U pip
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -U -r requirements.txt
+
+# If u want to use /update feature, uncomment the following and edit
+#RUN git config --global user.email "your_email"
+#RUN git config --global user.name "git_username"
+
+# Copying All Source
 COPY . .
-
-
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
 # Starting Bot
 CMD ["python3", "-m", "Key"]
