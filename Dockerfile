@@ -13,4 +13,4 @@ COPY . .
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
 # Starting Bot
-CMD bash start.sh
+CMD ["python3", "-m", "Key"]
