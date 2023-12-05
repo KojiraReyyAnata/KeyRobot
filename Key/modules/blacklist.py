@@ -19,74 +19,7 @@ from Key.modules.connection import connected
 from Key.modules.sql.approve_sql import is_approved
 from Key.modules.helper_funcs.alternate import send_message, typing_action
 
-from pyrogram import filters
-
-
 BLACKLIST_GROUP = 11
-
-
-async def get_blacklist_filters_count() -> dict:
-    chats_count = 0
-    filters_count = 0
-    async for chat in blacklist_filtersdb.find({"chat_id": {"$lt": 0}}):
-        filters = await get_blacklisted_words(chat["chat_id"])
-        filters_count += len(filters)
-        chats_count += 1
-    return {
-        "chats_count": chats_count,
-        "filters_count": filters_count,
-    }
-
-
-async def get_blacklisted_words(chat_id: int) -> List[str]:
-    _filters = await blacklist_filtersdb.find_one({"chat_id": chat_id})
-    return [] if not _filters else _filters["filters"]
-
-
-async def save_blacklist_filter(chat_id: int, word: str):
-    word = word.lower().strip()
-    _filters = await get_blacklisted_words(chat_id)
-    _filters.append(word)
-    await blacklist_filtersdb.update_one(
-        {"chat_id": chat_id},
-        {"$set": {"filters": _filters}},
-        upsert=True,
-    )
-
-
-async def delete_blacklist_filter(chat_id: int, word: str) -> bool:
-    filtersd = await get_blacklisted_words(chat_id)
-    word = word.lower().strip()
-    if word in filtersd:
-        filtersd.remove(word)
-        await blacklist_filtersdb.update_one(
-            {"chat_id": chat_id},
-            {"$set": {"filters": filtersd}},
-            upsert=True,
-        )
-        return True
-    return False
-
-
-@user_admin
-@typing_action
-def bl(_, message):
-    if message.reply_to_message:
-        kata = message.reply_to_message.text
-    else:
-        kata = message.text.split(None, 1)[1]
-    # huruf = 10
-    # kata_pertama = kata.split()[0][:huruf] if kata else ""
-    if not kata:
-        return await message.reply_text(
-            "**Usage**\n__/blacklist [balas pesan/berikan kata]__"
-        )
-    await message.reply_to_message.delete()
-    await message.delete()
-    chat_id = message.chat.id
-    await save_blacklist_filter(chat_id, kata)
-    await message.reply_text(f"__**Blacklisted {kata}.**__")
-
 
 
 @user_admin
